@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* Header and Navigation */
+.header {
+  background-color: #333333; /* Darker header */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Slight shadow for elevation */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 25px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4CAF50; /* Professional green hover */
+  border-bottom: 2px solid #4CAF50; /* Subtle underline on hover */
+}
+
+/* Special styling for the Home page link */
+.navbar a[href="index.html"] {
+  font-size: 20px; /* Larger font size */
+  color: #f9c74f; /* Gold color to make it stand out */
+  border-bottom: 2px solid #f9c74f; /* Gold underline for exclusivity */
+}
+
+.navbar a[href="index.html"]:hover {
+  color: #ffa62b; /* Orange shade on hover */
+  border-bottom: 2px solid #ffa62b; /* Matching underline */
+}
+
+/* Main Section */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #2c2c2c; /* Dark main section background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Specific styles for homepage intro */
+.intro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.intro-text {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #ddd;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for paragraph in homepage */
+.intro-text:hover {
+  background-color: #4CAF50; /* Highlight on hover */
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow for lift effect */
+  color: #fff; /* Text color change */
+}
+
+/* Achievement section */
+.achievements {
+  margin-top: 20px;
+}
+
+.achievement {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #3c3c3c; /* Slightly lighter than background for contrast */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for achievements */
+.achievement:hover {
+  background-color: #4CAF50; /* Highlight on hover */
+  color: #fff;
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow for lift effect */
+}
+
+/* Projects Section */
+.projects {
+  margin-top: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #3c3c3c; /* Slightly lighter than background for contrast */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for projects */
+.project:hover {
+  background-color: #4CAF50; /* Highlight on hover */
+  color: #fff;
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow for lift effect */
+}
+
+/* 3D Animation Container */
+#animation-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#3d-canvas {
+  width: 100%;
+  height: 500px;
+  background-color: #000; /* Placeholder for 3D canvas */
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+      width: 100%;
+      margin: 10px;
+  }
+
+  .navbar a {
+      font-size: 16px;
+      padding: 0 15px;
+  }
+
+  .intro-text, .achievement, .project {
+      width: 90%;
+      padding: 15px;
+  }
+}
